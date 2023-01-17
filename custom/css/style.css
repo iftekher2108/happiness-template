@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+:root {
+    --bg-color:#F6CB00;
+    --bg-color-2:#E6E6E6;
+
+}
+
+
+button.navbar-toggler.d-lg-none,button.navbar-toggler.d-lg-none:focus 
+{
+    box-shadow: none !important;
+    border: none;
+    outline: none;
+}
+
+nav.navbar.navbar-expand-sm.navbar-light.bg-light {
+    background: var(--bg-color) !important;
+}
+a {
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+
+.counter {
+    background: var(--bg-color-2);
+    margin-bottom: -10%;
+    z-index: 1;
+}
+.counter p
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.counter h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+h6 i {
+    transition: all 0.3s ease-in-out;
+}
+h6:hover i{
+    transform: translateX(5px);
+}
+
+
+.dash-file {
+    background: var(--bg-color);
+    position: relative;
+    z-index: -1;
+    max-height: 2rem;
+}
+.help-care {
+    background: var(--bg-color);
+
+}
+
+
+
+
