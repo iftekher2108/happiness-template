@@ -45,14 +45,14 @@ a {
     font-family: 'Open Sans', sans-serif;
 }
 
-.counter h1 {
+.counter h1,.about-us button {
     font-family: 'Bebas Neue', cursive;
 }
 
-h6 i,.parcent-content button i {
+h6 i,button i {
     transition: all 0.3s ease-in-out;
 }
-h6:hover i{
+h6:hover i,.about-us button:hover i{
     transform: translateX(5px);
 }
 
@@ -74,28 +74,53 @@ h6:hover i{
     background: var(--bg-color-2);
 }
 
-.parcent-content h1{
+.parcent-content h1,.our-team-content h1{
     color: var(--bg-color);
     font-family: 'Bebas Neue', cursive;
 }
 
-.parcent-content button {
+.parcent-content button,.our-team-content button,.our-method button {
     border-radius: 0px !important;
     font-family: 'Open Sans', sans-serif;
   
 }
 
-.parcent-content button:hover i {
+.parcent-content button:hover i,.our-team-content button:hover i,.our-method button:hover i {
     transform: translateX(15px);
 }
 
 
 
 
-.about-us button {
+.about-us button,.hero button {
     border-radius: 0px !important;
-    font-weight: 700;
 }
 
 
 
+
+.our-method {
+    background: var(--bg-color-2);
+}
+
+form .content button {
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    border-radius: 0px !important;
+}
+
+
+.contact button {
+     font-family: 'Bebas Neue', cursive;
+    letter-spacing: 5px;
+    border-radius: 0px !important;
+}
+
+
+.social-media a i {
+    font-size: larger;
+    transition: all 0.3s ease-in-out;
+}
+.social-media a i:hover {
+    color: var(--bg-color);
+}
