@@ -79,10 +79,15 @@ h6:hover i,.about-us button:hover i{
     font-family: 'Bebas Neue', cursive;
 }
 
-.parcent-content button,.our-team-content button,.our-method button {
+button {
     border-radius: 0px !important;
     font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
   
+}
+button:hover 
+{
+    border-radius: 5px !important;
 }
 
 .parcent-content button:hover i,.our-team-content button:hover i,.our-method button:hover i {
@@ -107,13 +112,22 @@ form .content button {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
     border-radius: 0px !important;
+    transition: all 0.3s ease-in-out;
+}
+form .content button:hover {
+    color: black;
+    background: #F6CB00;
 }
 
-
 .contact button {
-     font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
     border-radius: 0px !important;
+    transition: all 0.3s ease-in-out;
+}
+.contact button:hover{
+    color: black;
+    background: white;
 }
 
 
@@ -123,4 +137,18 @@ form .content button {
 }
 .social-media a i:hover {
     color: var(--bg-color);
+}
+
+
+
+
+
+
+
+.subscribe :is(input,textarea),::placeholder
+{
+    color: #F6CB00!important;
+    background: #000;
+    box-shadow: none!important;
+    border: none;
 }
