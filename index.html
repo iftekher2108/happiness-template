@@ -5,31 +5,30 @@
     <title>Happy Consultancy</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap CSS v5.2.1 -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="./custom/scss/custom-boot.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./custom/plugins/aos/dist/aos.css" />
 
     <link rel="stylesheet" href="custom/css/style.css">
 
 </head>
 
 <body>
-    <header>
+    <header class="sticky-top">
 
         <!-- ==================================navbar menu start here============================== -->
 
-        <nav class="navbar navbar-expand-sm navbar-light bg-light m-0 p-0 fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light m-0 p-0">
             <div class="container">
-                <img src="image/happiness-logo.png" class="p-0 m-0" alt="happiness-logo" height="50" width="120">
+                <img src="image/happiness-logo.png" class="p-0 m-0" alt="happiness-logo" width="120">
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -38,11 +37,13 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ms-auto mt-2 mt-lg-0 gap-lg-4">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Hapiness <span
-                                    class="visually-hidden">(current)</span></a>
+                            <a class="nav-link active" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Book</a>
+                            <a class="nav-link" href="#">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About Us</a>
@@ -70,82 +71,81 @@
     <main>
 
         <!-- ===================================hero content start here================================== -->
-        <div class=" row hero d-flex flex-lg-row flex-sm-column align-items-center mt-5 m-5 py-5 overflow-hidden">
-            <div class="hero-img col-lg-6 col-sm-12" data-aos="fade-right">
-                <img src="image/hero-image.png" class="img-fluid" alt="hero-image">
-            </div>
+        <div class="hero-section row align-items-center p-5 overflow-hidden">
+
             <div class="hero-content col-lg-6 col-sm-12 my-2" data-aos="fade-left">
-                <h1 class="titile">HOW HAPPY ARE YOU?</h1>
+                <h1 class="title fw-bold">HOW HAPPY ARE YOU?</h1>
                 <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi aut distinctio harum
                     nisi fugit vitae quaerat eaque facilis saepe sed odit corporis, laborum possimus eum dignissimos
                     libero natus adipisci officia.</p>
-                <button class="btn  btn-warning px-5"><a href="#" class="nav-link">click me</a></button>
+                <a href="#" class="btn btn-primary fw-bold text-uppercase border-dark rounded-0 py-2 mb-3 px-5 ">Explore
+                    More</a>
             </div>
+
+            <div class="hero-img col-lg-6 col-sm-12" data-aos="fade-right">
+                <img src="image/hero-image.png" class="img-fluid w-100" alt="hero-image">
+            </div>
+
+
 
         </div>
         <!-- ========================hero content end here================================= -->
 
 
         <!-- ============================counter content  start here============================== -->
-        <div class="counter row mx-5 p-3" data-aos="fade-up">
-            <div class="counter-content col-lg-4" >
-                <h1 style="color:#F6CB00;">HAPPINESS IN NUMBERS</h1>
+        <div class="counter row bg-primary p-5" data-aos="fade-up">
+            <div class="counter-content col-lg-6 col-md-8  col-sm-12 m-auto text-center mt-3">
+                <h1 class=" text-dark text-uppercase fw-bold">Who we Are</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis! Soluta amet animi harum
                     quasi sunt nobis non enim quibusdam.</p>
-                <h6>Read More <i class="fa-solid fa-chevron-right"></i></h5>
+                <a href="" class="btn btn-dark py-2 border-dark mb-4 text-uppercase px-5 fw-bold rounded-0">Read More <i
+                        class="fa-solid m-auto fa-chevron-right"></i></a>
             </div>
-            <div class="col-1"></div>
-            <div class="img-group d-flex gap-3 col-lg-7">
-                <div class="image mt-2">
-                    <img src="image/Graphics.png" class="img-fluid" alt="counter-image">
 
-                </div>
-                <div class="image mt-2">
-                    <img src="image/Graphic Two.png" class="img-fluid" alt="counter-image">
-
-                </div>
-
-            </div>
         </div>
 
-        <!-- ========================space gaper div element======================== -->
-        <div class="p-5 row-cols-6 dash-file border-0"></div>
-        <!-- =======================space gaper div element========================== -->
         <!-- ==============================counter content end here=============================== -->
 
 
 
 
         <!-- =================================help care content start here======================-->
-        <div class="help-care row d-flex justify-content-around p-5 align-items-center" data-aos="zoom-in">
-            <div class="col-lg-4">
-                <h1>WE CAN HELP YOU TO BE HAPPY</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis! Soluta amet animi harum
-                    quasi sunt nobis non enim quibusdam.</p>
-                <h6>Read More <i class="fa-solid fa-chevron-right"></i></h5>
-            </div>
-            <div class="img-group d-flex gap-3 col-lg-8">
+        <div class="help-care row justify-content-around p-lg-6 p-md-4 p-sm-3 align-items-center" data-aos="zoom-in">
+
+            <div class="img-group col-lg-6 mt-3">
                 <img src="image/help-care.png" class="img-fluid" alt="counter-image">
             </div>
+
+            <div class="col-lg-6 mt-3">
+                <h1 class="fw-bold text-uppercase">HOW WE CAN HELP YOU?</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis! Soluta amet animi harum
+                    quasi sunt nobis non enim quibusdam.</p>
+                <a href="" class="btn btn-dark fw-bold text-uppercase rounded-0 mb-3 px-5 py-2">Read More <i
+                        class="fa-solid fa-chevron-right"></i></a>
+            </div>
+
         </div>
         <!-- ==============================help care content end here========================== -->
 
 
 
         <!-- ===============================parcent-happiness start here========================== -->
-        <div class="parcent-happiness p-5">
+        <div class="parcent-happiness p-lg-5 p-md-4 p-sm-3">
             <div class="main-parcent-content row overflow-hidden">
-                <div class="image col-lg-6 col-sm-12 p-0" data-aos="fade-right">
-                    <img src="image/parcent-happiness.png" class="img-fluid " alt="parcent-image">
-                </div>
-                <div class="parcent-content col-lg-6 col-sm-12 p-5" data-aos="fade-left">
-                    <h1>% HAPPINESS</h1>
+
+                <div class="parcent-content col-lg-6 col-sm-12 mt-4 p-5" data-aos="fade-left">
+                    <h1 class="fw-bold text-uppercase">Client Relationship</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quas quis tenetur, commodi, pariatur
                         officia quidem minima fuga culpa beatae at delectus consequatur exercitationem ex. Nostrum
                         deserunt cumque vel consectetur.</p>
-                    <button class="btn btn-dark px-5"><a href="#" class="nav-link">Read More <i
-                                class="fa-solid fa-chevron-right"></i></a></button>
+                    <a href="#" class="btn btn-dark fw-bold text-uppercase rounded-0 px-5 py-2 ">Read More <i
+                            class="fa-solid fa-chevron-right"></i></a>
                 </div>
+
+                <div class="image col-lg-6 col-sm-12 p-0" data-aos="fade-right">
+                    <img src="image/parcent-happiness.png" class="img-fluid " alt="parcent-image">
+                </div>
+
             </div>
 
         </div>
@@ -153,13 +153,17 @@
 
 
         <!-- ===================================about us start here=========================== -->
-        <div class="about-us p-5 bg-black text-white d-flex flex-column gap-3 align-items-center" data-aos="zoom-in-up">
-            <h2 style="color: #F6CB00;">ABOUT US</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae beatae aperiam qui fuga esse,
-                consectetur quaerat, facere excepturi nisi eius incidunt iure obcaecati deleniti quo, omnis ullam.
-                Corrupti, cum consequatur.</p>
+        <div class="about-us p-5 bg-black text-white text-center d-flex flex-column gap-3 align-items-center"
+            data-aos="zoom-in-up">
+            <h1 class="text-primary fw-bold text-uppercase">ABOUT US</h1>
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae beatae aperiam qui fuga esse,
+                    consectetur quaerat, facere excepturi nisi eius incidunt iure obcaecati deleniti.</p>
+            </div>
+
             <img src="image/about-us.png" class="img-fluid" alt="about-us">
-            <button class="btn btn-warning px-4 mt-4">Read More <i class="fa-solid fa-chevron-right"></i></button>
+            <a class="btn btn-primary rounded-0 text-uppercase fw-bold px-5 py-2 mt-4">Read More <i
+                    class="fa-solid fa-chevron-right"></i></a>
 
         </div>
         <!-- ==================================about us end here=============================== -->
@@ -172,13 +176,14 @@
                 <div class="image col-lg-6 col-sm-12 p-0" data-aos="fade-right">
                     <img src="image/help-care.png" class="img-fluid " alt="parcent-image">
                 </div>
-                <div class="our-team-content col-lg-6 col-sm-12 p-5 d-flex flex-column justify-content-center" data-aos="fade-left">
-                    <h1>OUR TEAM</h1>
+                <div class="our-team-content col-lg-6 col-sm-12 p-lg-5 p-md-4 p-sm-3 mt-3 justify-content-center"
+                    data-aos="fade-left">
+                    <h1 class="fw-bold text-uppercase">OUR TEAM</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab quas quis tenetur, commodi, pariatur
                         officia quidem minima fuga culpa beatae at delectus consequatur exercitationem ex. Nostrum
                         deserunt cumque vel consectetur.</p>
-                    <button class="btn btn-warning px-4"><a href="#" class="nav-link">Read More <i
-                                class="fa-solid fa-chevron-right"></i></a></button>
+                    <a href="#" class="btn btn-primary text-uppercase fw-bold border-dark rounded-0 px-5 py-2">Read More
+                        <i class="fa-solid fa-chevron-right"></i></a>
                 </div>
             </div>
 
@@ -189,13 +194,13 @@
         <!-- =================================our method content start here====================== -->
 
         <div class="our-method row p-4 m-0" data-aos="zoom-in-up">
-            <div class="method-content col-lg-6 col-sm-12 p-5 d-flex flex-column justify-content-center">
-                <h1>TRY OUR METHOD FOR FREE</h1>
+            <div class="method-content col-lg-6 col-sm-12 p-lg-5 p-md-4 p-sm-3 mt-3 justify-content-center">
+                <h1 class="fw-bold text-uppercase">why choose our service</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum error voluptatibus qui consequatur
                     commodi, maiores quibusdam officia a! Reprehenderit explicabo non error quis nesciunt distinctio
                     ipsa consequatur ex a ipsam.</p>
-                <button class="btn btn-warning"><a href="" class="nav-link">Read More <i
-                            class="fa-solid fa-chevron-right"></i></a></button>
+                <a href="" class="btn btn-primary text-uppercase fw-bold rounded-0 px-5 py-2 border-dark">Read More <i
+                        class="fa-solid fa-chevron-right"></i></a>
             </div>
             <div class="image col-lg-6 col-sm-12">
                 <img src="image/our-method.png" class="img-fluid" alt="our-method">
@@ -205,36 +210,42 @@
 
         <!-- ====================================subscribe newsletter start here================================= -->
 
-        <div class="subscribe p-5">
+        <div class="subscribe p-lg-5 p-md-4 p-sm-3 mt-3" id="contact-us">
             <form action="#" class="row overflow-hidden" style="background:#E6E6E6;">
                 <div class="input-elements col-lg-6 col-sm-12 bg-black text-white p-4" data-aos="fade-right">
-                    <div class="name-group row my-3 px-3 m-auto">
-                        <div class="name col-lg-6 col-sm-12 border-bottom border-1 border-white rounded-1">
-                            <label for="name  ">Name</label><br>
-                            <input type="text" class="form-control bg-black" name="name" id="" placeholder="name">
+                    <div class="name-group row g-3">
+                        <div class="name col-lg-6 col-sm-12 my-3">
+                            <label for="name" class="fw-bold">Name</label><br>
+                            <input type="text"
+                                class="form-control border-bottom border-1 border-white rounded-1 bg-black" name="name"
+                                id="name" placeholder="name">
                         </div>
-                        <div class="surname col-lg-6 col-sm-12 border-bottom border-1 border-white rounded-1">
-                            <label for="surname">Surname</label><br>
-                            <input type="text" class="form-control bg-black" name="surname" id="" placeholder="surname">
+                        <div class="surname col-lg-6 col-sm-12 my-3">
+                            <label for="surname" class="fw-bold">Surname</label><br>
+                            <input type="text"
+                                class="form-control border-bottom border-1 border-white rounded-1 bg-black"
+                                name="surname" id="surname" placeholder="surname">
                         </div>
                     </div>
 
-                    <div class="email my-3  border-bottom border-1 border-white rounded-1">
-                        <label for="email">Email</label><br>
-                        <input type="email" class="form-control bg-black" name="email" id="" placeholder="email"
-                            autocomplete="none">
+                    <div class="email my-3  ">
+                        <label for="email" class="fw-bold">Email</label><br>
+                        <input type="email" class="form-control border-bottom border-1 border-white rounded-1 bg-black"
+                            name="email" id="email" placeholder="email" autocomplete="none">
                     </div>
 
-                    <div class="password my-3  border-1 border-bottom border-white rounded-1">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control bg-black" name="password" id=""
-                            placeholder="password">
+                    <div class="password my-3  ">
+                        <label for="password" class="fw-bold">Password</label>
+                        <input type="password"
+                            class="form-control border-1 border-bottom border-white rounded-1 bg-black" name="password"
+                            id="password" placeholder="password">
                     </div>
 
-                    <div class="massage my-3  border-bottom border-1 border-white rounded-1">
-                        <label for="massage">Massage</label>
-                        <textarea name="massage" placeholder="massage" class="form-control bg-black" id="" cols="20"
-                            rows="5"></textarea>
+                    <div class="information my-3  ">
+                        <label for="information" class="fw-bold">Information</label>
+                        <textarea name="information" placeholder="Information"
+                            class="form-control border-bottom border-1 border-white rounded-1 bg-black" id="information"
+                            cols="20" rows="5"></textarea>
                     </div>
 
                     <div class="form-content my-3  mt-4 ">
@@ -245,12 +256,13 @@
                     </div>
 
                 </div>
-                <div class="content col-lg-6 col-sm-12 d-flex flex-column justify-content-center p-5" data-aos="fade-left">
-                    <h1 style="color: #F6CB00;">SUBSCRIBE TO OUR NEWSLETTER</h1>
+                <div class="content col-lg-6 col-sm-12 d-flex flex-column justify-content-center p-5"
+                    data-aos="fade-left">
+                    <h1 class="text-dark fw-bold">SUBSCRIBE TO OUR NEWSLETTER</h1>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi debitis cum enim necessitatibus
                         accusamus quae nulla ut quas laborum dicta pariatur sunt natus repellendus harum sapiente,
                         dolorem, molestiae rerum molestias.</p>
-                    <button type="submit" class="btn btn-dark">Subscribe</button>
+                    <button type="submit" class="btn text-uppercase fw-bold btn-dark">Subscribe</button>
                 </div>
             </form>
         </div>
@@ -259,8 +271,8 @@
 
         <!-- ===========================================contact content start here========================================== -->
 
-        <div class="contact d-flex flex-column align-items-center p-5 gap-3" style="background: #F6CB00;" data-aos="zoom-in">
-            <h1>CONTACT</h1>
+        <div class="contact d-flex flex-column align-items-center bg-primary p-5 gap-3" data-aos="zoom-in">
+            <h1 class="fw-bold text-uppercase">CONTACT</h1>
             <h5>Lorem, ipsum dolor sit amet consectetur adipisicing.</h5>
             <!-- <img src="image/contact-map.png" class="img-fluid" alt="map-image"> -->
             <div class="map img-fluid">
@@ -271,7 +283,7 @@
             </div>
 
 
-            <button class="btn btn-dark mt-2 px-5">Connect</button>
+            <a href="#contact-us" class="btn btn-dark text-uppercase rounded-0 mt-2 py-2 px-5">Connect With us</a>
         </div>
         <!-- ====================================================contact content end here============================================ -->
 
@@ -281,26 +293,44 @@
     </main>
     <footer class="p-5 bg-dark text-white">
         <!-- place footer here -->
-        <div class="logo">
-            <img src="image/happiness-logo.png" alt="happiness-logo" height="80" width="140">
+
+
+        <div class="row g-3">
+
+            <div class="col-lg-4">
+                <img src="image/happiness-logo.png" alt="happiness-logo" width="140">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit suscipit obcaecati maiores perferendis
+                    id illum?</p>
+            </div>
+
+            <div class="col-lg-4">
+                <h4 class="text-primary text-uppercase fw-bold">Quick Links</h4>
+                <ul class="menu1 p-0 m-0">
+                    <li class="list-group-item"><a href="#" class="nav-link">- Hapiness</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- Book</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- About us</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4">
+                <h4 class="text-primary text-uppercase fw-bold">support</h4>
+                <ul class="menu2 m-0 p-0">
+                    <li class="list-group-item"><a href="#" class="nav-link">- Support Community</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- Policy Privacy</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- Help Center</a></li>
+                    <li class="list-group-item"><a href="#" class="nav-link">- FAQs</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="menu-group d-flex" style="color:#F6CB00;">
-            <ul class="menu1">
-                <li class="list-group-item"><a href="#" class="nav-link">Hapiness</a></li>
-                <li class="list-group-item"><a href="#" class="nav-link">Book</a></li>
-                <li class="list-group-item"><a href="#" class="nav-link">About us</a></li>
-                <li class="list-group-item"><a href="#" class="nav-link">Contact</a></li>
-            </ul>
-            <ul class="menu2">
-                <li class="list-group-item"><a href="#" class="nav-link">Policy Privacy</a></li>
-                <li class="list-group-item"><a href="#" class="nav-link">Cookies</a></li>
-                <li class="list-group-item"><a href="#" class="nav-link">FAQs</a></li>
-            </ul>
-        </div>
+
+
         <hr>
         <div class="copy-social d-flex justify-content-around">
             <div class="copyright">
-                <p>copyright &copy; Iftekher mahmud | developed by Iftekher mahmud</p>
+                <p class="small">copyright &copy; 2018 - <span class="date">2023</span> Reserved by Iftekher mahmud |
+                    developed by <span class="text-primary">Iftekher mahmud</span></p>
             </div>
             <div class="social-media d-flex">
                 <a href="#" class="m-2 nav-link"><i class="fa-brands fa-instagram"></i></a>
@@ -315,14 +345,13 @@
 
 
     </footer>
+
     <!-- Bootstrap JavaScript Libraries -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./custom/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="./custom/plugins/jquery/dist/jquery.min.js"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./custom/plugins/aos/dist/aos.js"></script>
 
     <script>
         AOS.init({
@@ -338,9 +367,6 @@
             mirror: false,
         });
     </script>
-
-
-
 
 
     <script src="custom/js/main.js"></script>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 
@@ -10,17 +10,33 @@
     margin: 0;
 }
 
+/* html {
+    overflow-x: hidden;
+} */
+
 
 
 :root {
-    --bg-color:#F6CB00;
-    --bg-color-2:#E6E6E6;
+    --bg-color: var(--bs-primary);
+    --bg-color-2: #E6E6E6;
 
 }
 
+p,a {
+    font-family: 'Open Sans', sans-serif;
+}
 
-button.navbar-toggler.d-lg-none,button.navbar-toggler.d-lg-none:focus 
-{
+h1,.btn {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+/* ================================== nav-section ==================================== */
+
+button.navbar-toggler.d-lg-none,
+button.navbar-toggler.d-lg-none:focus {
     box-shadow: none !important;
     border: none;
     outline: none;
@@ -29,43 +45,124 @@ button.navbar-toggler.d-lg-none,button.navbar-toggler.d-lg-none:focus
 nav.navbar.navbar-expand-sm.navbar-light.bg-light {
     background: var(--bg-color) !important;
 }
-a {
-    font-family: 'Bebas Neue', cursive;
+
+
+
+
+/* ================================== nav-section ==================================== */
+
+
+
+
+
+/* =================================== hero section ================================== */
+.hero-section {
+    background: url(../../image/hero-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
+/* =================================== hero section ================================== */
+
+
+
+
+
+/* =================================== counter section ================================ */
 
 .counter {
     background: var(--bg-color-2);
-    margin-bottom: -10%;
     z-index: 1;
 }
-.counter p
-{
-    font-family: 'Open Sans', sans-serif;
-}
-
-.counter h1,.about-us button {
-    font-family: 'Bebas Neue', cursive;
-}
-
-h6 i,button i {
-    transition: all 0.3s ease-in-out;
-}
-h6:hover i,.about-us button:hover i{
-    transform: translateX(5px);
-}
 
 
-.dash-file {
-    background: var(--bg-color);
-    position: relative;
-    z-index: -1;
-}
+
+
+/* =================================== counter section ================================ */
+
+
+
+
+/* =================================== help care ======================================  */
 .help-care {
     background: var(--bg-color);
     margin: 0;
 
+}
+
+
+/* =================================== help care ======================================  */
+
+
+
+
+
+
+/* =================================== parcent-happiness ================================ */
+
+
+
+
+/* =================================== parcent-happiness ================================ */
+
+
+
+
+/* =================================== utilities ======================================== */
+
+.btn {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    transform-origin: center;
+    transform: scaleX(0);
+    opacity: 0.15;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.btn:hover::before {
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+    -moz-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    -o-transform: scaleX(1);
+}
+
+
+
+/* =================================== utilities ======================================== */
+
+.btn i{
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover i,
+.about-us button:hover i {
+    transform: translateX(5px);
 }
 
 
@@ -74,58 +171,29 @@ h6:hover i,.about-us button:hover i{
     background: var(--bg-color-2);
 }
 
-.parcent-content h1,.our-team-content h1{
-    color: var(--bg-color);
-    font-family: 'Bebas Neue', cursive;
-}
-
-button {
-    border-radius: 0px !important;
-    font-family: 'Open Sans', sans-serif;
-    transition: all 0.3s ease-in-out;
-  
-}
-button:hover 
-{
-    border-radius: 5px !important;
-}
-
-.parcent-content button:hover i,.our-team-content button:hover i,.our-method button:hover i {
-    transform: translateX(15px);
-}
-
-
-
-
-.about-us button,.hero button {
-    border-radius: 0px !important;
-}
-
-
-
 
 .our-method {
     background: var(--bg-color-2);
 }
 
 form .content button {
-    font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
     border-radius: 0px !important;
     transition: all 0.3s ease-in-out;
 }
+
 form .content button:hover {
     color: black;
-    background: #F6CB00;
+    background: var(--bg-color);
 }
 
 .contact button {
-    font-family: 'Bebas Neue', cursive;
     letter-spacing: 5px;
     border-radius: 0px !important;
     transition: all 0.3s ease-in-out;
 }
-.contact button:hover{
+
+.contact button:hover {
     color: black;
     background: white;
 }
@@ -135,21 +203,26 @@ form .content button:hover {
     font-size: larger;
     transition: all 0.3s ease-in-out;
 }
+
 .social-media a i:hover {
     color: var(--bg-color);
 }
 
 
 
-
-
-
-
-.subscribe :is(input,textarea),::placeholder
-{
-    color: #F6CB00!important;
+.subscribe :is(input, textarea) {
+    color: var(--bg-color) !important;
     background: #000;
-    box-shadow: none!important;
+    box-shadow: none !important;
+    border: none;
+}
+
+.subscribe :is(input, textarea)::placeholder {
+    color: var(--bg-color) !important;
+    opacity: 0.8;
+
+    background: #000;
+    box-shadow: none !important;
     border: none;
 }
 
@@ -171,4 +244,23 @@ form .content button:hover {
         height: 30vh;
         width: 100%;
     }
+}
+
+
+
+footer li a{
+    transition: all 0.4s ease-in-out !important;
+    -webkit-transition: all 0.4s ease-in-out !important;
+    -moz-transition: all 0.4s ease-in-out !important;
+    -ms-transition: all 0.4s ease-in-out !important;
+    -o-transition: all 0.4s ease-in-out !important;
+}
+
+footer li a:is(:focus,:hover) {
+    color: var(--bg-color) !important;
+    transform: translateX(7px);
+    -webkit-transform: translateX(7px);
+    -moz-transform: translateX(7px);
+    -ms-transform: translateX(7px);
+    -o-transform: translateX(7px);
 }
