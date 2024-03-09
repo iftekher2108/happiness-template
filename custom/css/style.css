@@ -10,9 +10,9 @@
     margin: 0;
 }
 
-/* html {
+html {
     overflow-x: hidden;
-} */
+}
 
 
 
@@ -20,6 +20,16 @@
     --bg-color: var(--bs-primary);
     --bg-color-2: #E6E6E6;
 
+}
+
+#loader {
+    background: #000;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 2000;
 }
 
 p,a {
@@ -74,7 +84,6 @@ nav.navbar.navbar-expand-sm.navbar-light.bg-light {
 
 .counter {
     background: var(--bg-color-2);
-    z-index: 1;
 }
 
 
@@ -88,8 +97,6 @@ nav.navbar.navbar-expand-sm.navbar-light.bg-light {
 /* =================================== help care ======================================  */
 .help-care {
     background: var(--bg-color);
-    margin: 0;
-
 }
 
 
