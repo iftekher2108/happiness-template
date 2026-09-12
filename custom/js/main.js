@@ -1,12 +1,10 @@
-console.log('this is psd to html theme.')
-console.log("developed by Iftekher Mahmud Pervez.")
-
-// copy right date
-var date = new Date().getFullYear()
-$('.date').html(date)
-
-// web loading effect
-
-$(document).ready(function(){
+$(function () {
+    $('.date').text(new Date().getFullYear())
     $('#loader').fadeOut(300)
+
+    $('#contactForm').on('submit', function (event) {
+        event.preventDefault()
+        var submitButton = $(this).find('button[type="submit"]')
+        submitButton.prop('disabled', true).html('Thanks, we will be in touch <i class="fa-solid fa-check ms-2"></i>')
+    })
 })
